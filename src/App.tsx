@@ -1,7 +1,22 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
+import Episode from './pages/podcast/episode/Episode';
+import Home from './pages/Home';
 import Layout from './layout/Layout';
+import Podcast from './pages/podcast/Podcast';
 
 function App() {
-  return <Layout>hola</Layout>;
+  return (
+    <BrowserRouter>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/podcast/:id" element={<Podcast />} />
+          <Route path="/podcast/:id/episode/:id" element={<Episode />} />
+        </Routes>
+      </Layout>
+    </BrowserRouter>
+  );
 }
 
 export default App;
