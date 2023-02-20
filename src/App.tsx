@@ -11,13 +11,10 @@ function App() {
     <BrowserRouter>
       <Layout>
         <Routes>
+          <Route path="*" element={<ErrorPage />} />
           <Route path="/" element={<Home />} />
-          <Route path="/podcast/:id" element={<Podcast />} errorElement={<ErrorPage />} />
-          <Route
-            path="/podcast/:id/episode/:id"
-            element={<Episode />}
-            errorElement={<ErrorPage />}
-          />
+          <Route path="/podcast/:id" element={<Podcast />} />
+          <Route path="/podcast/:id/episode/:id" element={<Episode />} />
         </Routes>
       </Layout>
     </BrowserRouter>

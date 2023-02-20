@@ -1,14 +1,12 @@
 import { ErrorPageContent } from '../content';
+import ErrorPageStyles from './styles/ErrorPage.module.scss';
 import { FC } from 'react';
-import { useRouteError } from 'react-router-dom';
 
 const ErrorPage: FC = () => {
-  let error = useRouteError();
-  console.log(error);
-
   const { title, status_code } = ErrorPageContent;
+
   return (
-    <div>
+    <div className={ErrorPageStyles.container}>
       <h2>{title}</h2>
       <p>{status_code}</p>
     </div>
