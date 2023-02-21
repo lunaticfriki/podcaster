@@ -5,15 +5,16 @@ interface CardProps {
   title: string;
   image: string;
   author: string;
+  summary: string;
   id: string;
 }
 
-const Card: FC<CardProps> = ({ title, image, author, id }) => {
+const Card: FC<CardProps> = ({ title, image, author, summary, id }) => {
   return (
-    <Link to={`/podcast/${id}`}>
+    <Link to={`/podcast/${id}`} state={{ summary }}>
       <article className={CardStyles.container}>
-        <h3>{title}</h3>
         <img src={image} alt={title} />
+        <h3>{title}</h3>
         <p>{author}</p>
       </article>
     </Link>
