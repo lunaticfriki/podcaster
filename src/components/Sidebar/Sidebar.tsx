@@ -17,7 +17,9 @@ const Sidebar: FC<SidebarProps> = ({ title, author, cover, description }) => {
           {title} <span>by {author}</span>
         </p>
       </div>
-      <p>{description}</p>
+      <div className={SidebarStyles.description}>
+        <p>{description}</p>
+      </div>
     </aside>
   );
 };

@@ -1,15 +1,21 @@
 .container {
-    border-inline-end: 1px solid var(--primary);
+   
+
+    border: none;
+   
     display: grid;
     grid-gap: 1rem;
     grid-template-rows: auto  1fr;
-    height: 50rem;
     left: 1rem;
-    padding: 1rem 1.5rem 0 0;
-    place-content: center;
-    position: fixed;
+    margin: auto;
+    min-height: 50rem;
+    padding: 1rem;
+    position: sticky;
+    
+   
+    
     top: 20%;
-    width: 300px;
+        width: 90%;
 
 
     img {
@@ -20,14 +26,12 @@
         color: var(--secondary);
     }
 
-    @media (max-width: 480px) {
-        border: none;
-        height: 500px;
-        margin: auto;
-        padding: 1rem;
+    @media (min-width: 480px) {
+        border-inline-end: 1px solid var(--primary);
+        padding: 1rem 1.5rem 0 0;
         place-items: center;
-        position: sticky;
-        width: 90%;
+        position: fixed;
+        width: 350px;
     }
 }
 
@@ -42,5 +46,16 @@
 
     span {
         font-style: normal;
+    }
+}
+
+.description {
+    height: auto;
+    
+    @media (min-width: 480px) {
+        height: 500px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        padding: .5rem;
     }
 }
