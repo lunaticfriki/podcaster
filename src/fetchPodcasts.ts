@@ -1,10 +1,11 @@
+import { FetchError } from './content';
 import { QueryFunctionContext } from '@tanstack/react-query';
 
 export const fetchPodcasts = async () => {
   const res = await fetch(`https://itunes.apple.com/us/rss/toppodcasts/limit=100/genre=1310/json`);
 
   if (!res.ok) {
-    throw new Error(`An error occurred while fetching podcasts`);
+    throw new Error(FetchError);
   }
 
   return res.json();
@@ -21,7 +22,7 @@ export const fetchPodcast = async ({
   );
 
   if (!res.ok) {
-    throw new Error(`An error occurred while fetching podcast ${id}`);
+    throw new Error(`${FetchError} ${id}`);
   }
 
   return res.json();
