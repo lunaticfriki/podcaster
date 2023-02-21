@@ -11,13 +11,12 @@ interface SidebarProps {
 const Sidebar: FC<SidebarProps> = ({ title, author, cover, description }) => {
   return (
     <aside className={SidebarStyles.container}>
-      <div className="cover">
+      <div className={SidebarStyles.cover}>
         <img src={cover} alt={title} />
         <p>
           {title} <span>by {author}</span>
         </p>
       </div>
-
       <p>{description}</p>
     </aside>
   );

@@ -19,4 +19,28 @@
     span {
         color: var(--secondary);
     }
+
+    @media (max-width: 480px) {
+        border: none;
+        height: 500px;
+        margin: auto;
+        padding: 1rem;
+        place-items: center;
+        position: sticky;
+        width: 90%;
+    }
+}
+
+.cover {
+    display: grid;
+    grid-gap: 1rem;
+    place-items: center;
+
+    p {
+        font-style: italic;
+    }
+
+    span {
+        font-style: normal;
+    }
 }
