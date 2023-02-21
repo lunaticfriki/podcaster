@@ -21,42 +21,44 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>
-        <Layout>
-          <Routes>
-            <Route
-              path="/*"
-              element={
-                <Suspense>
-                  <ErrorPage />
-                </Suspense>
-              }
-            />
-            <Route
-              path="/"
-              element={
-                <Suspense>
-                  <Home />
-                </Suspense>
-              }
-            />
-            <Route
-              path="/podcast/:id"
-              element={
-                <Suspense>
-                  <Podcast />
-                </Suspense>
-              }
-            />
-            <Route
-              path="/podcast/:id/episode/:id"
-              element={
-                <Suspense>
-                  <Episode />
-                </Suspense>
-              }
-            />
-          </Routes>
-        </Layout>
+        <Suspense>
+          <Layout>
+            <Routes>
+              <Route
+                path="/*"
+                element={
+                  <Suspense>
+                    <ErrorPage />
+                  </Suspense>
+                }
+              />
+              <Route
+                path="/"
+                element={
+                  <Suspense>
+                    <Home />
+                  </Suspense>
+                }
+              />
+              <Route
+                path="/podcast/:id"
+                element={
+                  <Suspense>
+                    <Podcast />
+                  </Suspense>
+                }
+              />
+              <Route
+                path="/podcast/:id/episode/:id"
+                element={
+                  <Suspense>
+                    <Episode />
+                  </Suspense>
+                }
+              />
+            </Routes>
+          </Layout>
+        </Suspense>
       </BrowserRouter>
     </QueryClientProvider>
   );
