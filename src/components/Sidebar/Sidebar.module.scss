@@ -1,23 +1,17 @@
 .container {
-   
-
     border: none;
-   
     display: grid;
     grid-gap: 1rem;
     grid-template-rows: auto  1fr;
     left: 1rem;
     margin: auto;
+    margin-block-end: 2rem;
     min-height: 50rem;
     padding: 1rem;
     position: sticky;
-    
-   
-    
     top: 20%;
-        width: 90%;
-
-
+    width: 100%;
+    
     img {
         width: 80%;
     }
@@ -26,12 +20,9 @@
         color: var(--secondary);
     }
 
-    @media (min-width: 480px) {
+    @media (min-width: 992px) {
         border-inline-end: 1px solid var(--primary);
-        padding: 1rem 1.5rem 0 0;
         place-items: center;
-        position: fixed;
-        width: 350px;
     }
 }
 
@@ -52,10 +43,10 @@
 .description {
     height: auto;
     
-    @media (min-width: 480px) {
+    @media (min-width: 992px) {
         height: 500px;
         overflow-x: hidden;
         overflow-y: auto;
-        padding: .5rem;
+        padding-inline-end: 1rem;
     }
 }

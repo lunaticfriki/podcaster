@@ -1,4 +1,4 @@
-import { FetchError } from './content';
+import { FetchError } from '../content';
 import { QueryFunctionContext } from '@tanstack/react-query';
 
 export const fetchPodcasts = async () => {
