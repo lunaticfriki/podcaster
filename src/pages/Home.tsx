@@ -17,6 +17,7 @@ const Home: FC = () => {
           title={el.title.label}
           author={el['im:artist'].label}
           image={el['im:image'][2].label}
+          id={el.id.attributes['im:id']}
         />
       ))}
     </div>
