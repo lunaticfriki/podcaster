@@ -1,11 +1,12 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { Suspense, lazy } from 'react';
 
-import Episode from './pages/podcast/episode/Episode';
-import ErrorPage from './pages/ErrorPage';
-import Home from './pages/Home';
-import Layout from './layout/Layout';
-import Podcast from './pages/podcast/Podcast';
+const Episode = lazy(() => import('./pages/podcast/episode/Episode'));
+const Home = lazy(() => import('./pages/Home'));
+const Podcast = lazy(() => import('./pages/podcast/Podcast'));
+const Layout = lazy(() => import('./layout/Layout'));
+const ErrorPage = lazy(() => import('./pages/ErrorPage'));
 
 function App() {
   const queryClient = new QueryClient({
@@ -22,10 +23,38 @@ function App() {
       <BrowserRouter>
         <Layout>
           <Routes>
-            <Route path="*" element={<ErrorPage />} />
-            <Route path="/" element={<Home />} />
-            <Route path="/podcast/:id" element={<Podcast />} />
-            <Route path="/podcast/:id/episode/:id" element={<Episode />} />
+            <Route
+              path="/*"
+              element={
+                <Suspense>
+                  <ErrorPage />
+                </Suspense>
+              }
+            />
+            <Route
+              path="/"
+              element={
+                <Suspense>
+                  <Home />
+                </Suspense>
+              }
+            />
+            <Route
+              path="/podcast/:id"
+              element={
+                <Suspense>
+                  <Podcast />
+                </Suspense>
+              }
+            />
+            <Route
+              path="/podcast/:id/episode/:id"
+              element={
+                <Suspense>
+                  <Episode />
+                </Suspense>
+              }
+            />
           </Routes>
         </Layout>
       </BrowserRouter>
