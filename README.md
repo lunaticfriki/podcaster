@@ -8,11 +8,12 @@ First of all, install the dependencies:
 pnpm install
 ```
 
-To run the development server:
+To run the development server and the mock-server:
 
 ```
 pnpm dev
 ```
+
 To build the project:
 
 ```
