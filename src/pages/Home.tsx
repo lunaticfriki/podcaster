@@ -7,20 +7,17 @@ import { useQuery } from '@tanstack/react-query';
 const Home: FC = () => {
   const { isLoading, data } = useQuery(['podcasts'], fetchPodcasts);
 
-  if (isLoading) return <div>'loading...'</div>;
-
-  console.log(data);
+  if (isLoading) return <div>Loading...</div>;
 
   return (
     <div className={HomeStyles.container}>
-      {data.feed.entry.map((el: any) => (
+      {data.feed?.entry.map((el: any) => (
         <Card
           key={el.id.attributes['im:id']}
           title={el.title.label}
           author={el['im:artist'].label}
           image={el['im:image'][2].label}
           id={el.id.attributes['im:id']}
-          summary={el.summary.label}
         />
       ))}
     </div>

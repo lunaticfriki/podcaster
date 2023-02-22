@@ -8,29 +8,24 @@ import { fetchPodcast } from '../../utils';
 import { useQuery } from '@tanstack/react-query';
 
 const Podcast: FC = () => {
-  const { id } = useParams();
   const { state } = useLocation();
+  const { id } = useParams();
   const { isLoading, data } = useQuery(['podcast', id], fetchPodcast);
 
   if (isLoading && !data) {
     return <div>Loading...</div>;
   } else {
-    const podcast = JSON.parse(data.contents);
-
-    const { artistName, trackName, artworkUrl600, trackCount } = podcast.results[0];
-    const { summary } = state;
-
-    console.log(podcast);
+    const { artistName, name, availableEpisodeCount, description } = data.attributes;
 
     return (
       <div className={PodcastStyles.container}>
         <Sidebar
-          title={trackName}
+          title={name}
           author={artistName}
-          cover={artworkUrl600}
-          description={summary}
+          cover={state.image}
+          description={description.standard}
         />
-        <List count={trackCount} />
+        <List count={availableEpisodeCount} />
       </div>
     );
   }

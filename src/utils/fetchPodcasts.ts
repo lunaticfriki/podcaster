@@ -2,12 +2,11 @@ import { FetchError } from '../content';
 import { QueryFunctionContext } from '@tanstack/react-query';
 
 export const fetchPodcasts = async () => {
-  const res = await fetch(`https://itunes.apple.com/us/rss/toppodcasts/limit=100/genre=1310/json`);
+  const res = await fetch(`${import.meta.env.VITE_API_URL}/feed`);
 
   if (!res.ok) {
     throw new Error(FetchError);
   }
-
   return res.json();
 };
 
@@ -15,15 +14,11 @@ export const fetchPodcast = async ({
   queryKey,
 }: QueryFunctionContext<[string, string | null | undefined]>) => {
   const id = queryKey[1];
-  const res = await fetch(
-    `https://api.allorigins.win/get?url=${encodeURIComponent(
-      `https://itunes.apple.com/lookup?id=${id}`
-    )}`
-  );
+  const res = await fetch(`${import.meta.env.VITE_API_URL}/detail/1535809341`);
 
   if (!res.ok) {
     throw new Error(`${FetchError} ${id}`);
   }
-
+  console.log(res);
   return res.json();
 };
