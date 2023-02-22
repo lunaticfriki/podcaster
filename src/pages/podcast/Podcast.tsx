@@ -15,7 +15,7 @@ const Podcast: FC = () => {
   if (isLoading && !data) {
     return <div>Loading...</div>;
   } else {
-    const { artistName, name, availableEpisodeCount, description } = data.attributes;
+    const { artistName, name, description } = data.attributes;
 
     return (
       <div className={PodcastStyles.container}>
@@ -25,7 +25,10 @@ const Podcast: FC = () => {
           cover={state.image}
           description={description.standard}
         />
-        <List count={availableEpisodeCount} />
+        <List
+          count={data?.relationships?.episodes.data.length}
+          episodes={data?.relationships?.episodes.data}
+        />
       </div>
     );
   }

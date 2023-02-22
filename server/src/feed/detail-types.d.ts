@@ -31,6 +31,7 @@ export interface Attributes {
   createdDate: string;
   websiteUrl: string;
   name: string;
+  durationInMilliseconds: number;
   artistName: string;
   contentRating: string;
   subscribable: boolean;
