@@ -1,10 +1,10 @@
-import { Detail } from '../../../server/src/feed/detail-types';
+import { EpisodesData } from '../../../server/src/feed/detail-types';
 import { FC } from 'react';
 import ListStyles from './List.module.scss';
 import { getDuration } from '../../utils';
 interface ListProps {
   count: string;
-  episodes: Detail[];
+  episodes: EpisodesData[];
 }
 
 const List: FC<ListProps> = ({ count, episodes }) => {

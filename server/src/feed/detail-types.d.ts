@@ -31,7 +31,6 @@ export interface Attributes {
   createdDate: string;
   websiteUrl: string;
   name: string;
-  durationInMilliseconds: number;
   artistName: string;
   contentRating: string;
   subscribable: boolean;
@@ -142,17 +141,17 @@ export interface Upsell {
 export interface Episodes {
   href: string;
   next: string;
-  data: EpisodesDatum[];
+  data: EpisodesData[];
 }
 
-export interface EpisodesDatum {
+export interface EpisodesData {
   id: string;
   type: string;
   href: string;
-  attributes: StickyAttributes;
+  attributes: EpisodeAttributes;
 }
 
-export interface StickyAttributes {
+export interface EpisodeAttributes {
   offers: Offer[];
   copyright: string;
   contentAdvisory: string;
