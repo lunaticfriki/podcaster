@@ -16,8 +16,10 @@ const Card: FC<CardProps> = ({ title, image, author, id }) => {
     <Link to={`${podcast}${id}`} state={{ image }}>
       <article className={CardStyles.container}>
         <img src={image} alt={title} />
-        <h3>{title}</h3>
-        <p>{author}</p>
+        <div className={CardStyles.info}>
+          <h3>{title}</h3>
+          <p>{author}</p>
+        </div>
       </article>
     </Link>
   );

@@ -1,26 +1,47 @@
 .container {
-    border: 1px solid var(--primary);
+    align-items: center;
     border-radius: 5px;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
+    display: flex;
+    flex-direction: column;
     height: 300px;
+    justify-content: flex-end;
     margin: 1rem auto;
     padding: 1rem;
-    place-items: center;
+    position: relative;
     transition: .3s ease-in-out;
     width: 350px;
+    
 
-    h3 {
-        color: var(--secondary);
+    
+
+    img {
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
     }
 
-    &:hover {
-        background-color: var(--secondary);
-        border: 1px solid var(--secondary);
-        cursor: pointer;
+    .info {
+        border: 1px solid var(--primary);
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        justify-content: flex-end;
+        padding: 1rem;
+        width: 100%;
 
         h3 {
-            color: var(--black);
+            color: var(--secondary);
+        }
+    
+        &:hover {
+            background-color: var(--secondary);
+            border: 1px solid var(--secondary);
+            cursor: pointer;
+    
+            h3 {
+                color: var(--black);
+            }
         }
     }
 
