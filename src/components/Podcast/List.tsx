@@ -4,6 +4,7 @@ import { FC } from 'react';
 import { Link } from 'react-router-dom';
 import ListElement from './ListElement';
 import ListStyles from './List.module.scss';
+import Loader from '../common/Loader';
 import { getDuration } from '../../utils';
 import { useParams } from 'react-router-dom';
 
@@ -15,7 +16,7 @@ interface ListProps {
 const List: FC<ListProps> = ({ count, episodes }) => {
   const { id } = useParams();
 
-  if (!episodes) return <h4>Loading...</h4>;
+  if (!episodes) return <Loader />;
 
   return (
     <div className={ListStyles.container}>
