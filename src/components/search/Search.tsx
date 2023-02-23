@@ -27,6 +27,7 @@ const Search: FC<SearchProps> = ({ fn }) => {
         className={SearchStyles.input}
         value={state}
         onChange={handleChange}
+        data-testid="input"
       />
     </div>
   );
