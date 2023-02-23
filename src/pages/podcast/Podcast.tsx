@@ -1,6 +1,7 @@
 import { Suspense, lazy } from 'react';
 
 import { FC } from 'react';
+import Loader from '../../components/common/Loader';
 import PodcastStyles from './styles/Podcast.module.scss';
 import { fetchPodcast } from '../../utils';
 import { useParams } from 'react-router-dom';
@@ -14,7 +15,7 @@ const Podcast: FC = () => {
   const { isLoading, data } = useQuery(['podcast', id], fetchPodcast);
 
   if (isLoading && !data) {
-    return <div>Loading...</div>;
+    return <Loader />;
   } else {
     const { artistName, name, description, image } = data.attributes;
 

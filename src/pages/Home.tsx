@@ -1,13 +1,14 @@
 import Card from '../components/Podcast/Card';
 import { FC } from 'react';
 import HomeStyles from './styles/Home.module.scss';
+import Loader from '../components/common/Loader';
 import { fetchPodcasts } from '../utils';
 import { useQuery } from '@tanstack/react-query';
 
 const Home: FC = () => {
   const { isLoading, data } = useQuery(['podcasts'], fetchPodcasts);
 
-  if (isLoading) return <div>Loading...</div>;
+  if (isLoading) return <Loader />;
 
   return (
     <div className={HomeStyles.container}>

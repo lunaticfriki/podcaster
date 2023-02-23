@@ -3,6 +3,7 @@ import { Suspense, lazy } from 'react';
 import Detail from '../../../components/Podcast/Detail';
 import { EpisodesData } from '../../../../server/src/feed/detail-types';
 import { FC } from 'react';
+import Loader from '../../../components/common/Loader';
 import { fetchPodcast } from '../../../utils';
 import parse from 'html-react-parser';
 import { useParams } from 'react-router-dom';
@@ -15,7 +16,7 @@ const Episode: FC = () => {
   const { isLoading, data } = useQuery(['podcast', id], fetchPodcast);
 
   if (isLoading && !data) {
-    return <div>Loading...</div>;
+    return <Loader />;
   } else {
     const { artistName, name, description, image } = data.attributes;
     const { relationships } = data;
