@@ -1,18 +1,16 @@
-import { FC, ReactNode } from 'react';
-
+import { FC } from 'react';
 import Footer from '../components/Footer/Footer';
 import Header from '../components/Header/Header';
 import LayoutStyles from './Layout.module.scss';
+import { Outlet } from 'react-router-dom';
 
-interface LayoutProps {
-  children: ReactNode;
-}
-
-const Layout: FC<LayoutProps> = ({ children }) => {
+const Layout: FC = () => {
   return (
     <div className={LayoutStyles.container}>
       <Header />
-      <main>{children}</main>
+      <main>
+        <Outlet />
+      </main>
       <Footer />
     </div>
   );

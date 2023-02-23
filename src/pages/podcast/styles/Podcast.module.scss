@@ -2,10 +2,4 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    
-    @media (min-width: 992px) {
-        display: grid;
-        grid-template-columns:350px 1fr;
-    }
-    
 }

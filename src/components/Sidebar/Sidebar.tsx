@@ -1,26 +1,31 @@
-import { FC } from 'react';
+import { FC, ReactElement, ReactNode } from 'react';
+
 import SidebarStyles from './Sidebar.module.scss';
 
 interface SidebarProps {
   title: string;
   author: string;
   cover: string;
-  description: string;
+  description: string | JSX.Element | JSX.Element[];
+  children: ReactNode;
 }
 
-const Sidebar: FC<SidebarProps> = ({ title, author, cover, description }) => {
+const Sidebar: FC<SidebarProps> = ({ title, author, cover, description, children }) => {
   return (
-    <aside className={SidebarStyles.container}>
-      <div className={SidebarStyles.cover}>
-        <img src={cover} alt={title} />
-        <p>
-          {title} <span>by {author}</span>
-        </p>
-      </div>
-      <div className={SidebarStyles.description}>
-        <p>{description}</p>
-      </div>
-    </aside>
+    <div className={SidebarStyles.layout}>
+      <aside className={SidebarStyles.container}>
+        <div className={SidebarStyles.cover}>
+          <img src={cover} alt={title} />
+          <p>
+            {title} <span>by {author}</span>
+          </p>
+        </div>
+        <div className={SidebarStyles.description}>
+          <p>{description}</p>
+        </div>
+      </aside>
+      {children}
+    </div>
   );
 };
 

@@ -1,34 +1,40 @@
-import { useLocation, useParams } from 'react-router-dom';
+import { Suspense, lazy } from 'react';
 
 import { FC } from 'react';
-import List from '../../components/Podcast/List';
 import PodcastStyles from './styles/Podcast.module.scss';
-import Sidebar from '../../components/Sidebar/Sidebar';
 import { fetchPodcast } from '../../utils';
+import { useParams } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 
+const List = lazy(() => import('../../components/Podcast/List'));
+const Sidebar = lazy(() => import('../../components/Sidebar/Sidebar'));
+
 const Podcast: FC = () => {
-  const { state } = useLocation();
   const { id } = useParams();
   const { isLoading, data } = useQuery(['podcast', id], fetchPodcast);
 
   if (isLoading && !data) {
     return <div>Loading...</div>;
   } else {
-    const { artistName, name, description } = data.attributes;
+    const { artistName, name, description, image } = data.attributes;
 
     return (
       <div className={PodcastStyles.container}>
-        <Sidebar
-          title={name}
-          author={artistName}
-          cover={state.image}
-          description={description.standard}
-        />
-        <List
-          count={data?.relationships?.episodes.data.length}
-          episodes={data?.relationships?.episodes.data}
-        />
+        <Suspense>
+          <Sidebar
+            title={name}
+            author={artistName}
+            cover={image[2].label}
+            description={description.standard}
+          >
+            <Suspense>
+              <List
+                count={data?.relationships?.episodes.data.length}
+                episodes={data?.relationships?.episodes.data}
+              />
+            </Suspense>
+          </Sidebar>
+        </Suspense>
       </div>
     );
   }
