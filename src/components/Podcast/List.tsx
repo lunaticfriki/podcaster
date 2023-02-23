@@ -19,7 +19,7 @@ const List: FC<ListProps> = ({ count, episodes }) => {
           <ListElement
             key={el.id}
             name={el.attributes?.name}
-            date={el.attributes?.releaseDateTime}
+            date={el.attributes?.releaseDateTime.slice(0, 10)}
             duration={getDuration(el.attributes?.durationInMilliseconds)}
           />
         ))}
