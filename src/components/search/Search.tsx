@@ -20,16 +20,14 @@ const Search: FC<SearchProps> = ({ fn }) => {
   }, [state]);
 
   return (
-    <div>
-      <input
-        type="text"
-        placeholder={placeholder}
-        className={SearchStyles.input}
-        value={state}
-        onChange={handleChange}
-        data-testid="input"
-      />
-    </div>
+    <input
+      type="text"
+      placeholder={placeholder}
+      className={SearchStyles.input}
+      value={state}
+      onChange={handleChange}
+      data-testid="input"
+    />
   );
 };
 
