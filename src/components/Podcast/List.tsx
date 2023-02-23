@@ -1,3 +1,4 @@
+import BackButton from '../common/BackButton';
 import { EpisodesData } from '../../../server/src/feed/detail-types';
 import { FC } from 'react';
 import { Link } from 'react-router-dom';
@@ -5,6 +6,7 @@ import ListElement from './ListElement';
 import ListStyles from './List.module.scss';
 import { getDuration } from '../../utils';
 import { useParams } from 'react-router-dom';
+
 interface ListProps {
   count: string;
   episodes: EpisodesData[];
@@ -29,6 +31,7 @@ const List: FC<ListProps> = ({ count, episodes }) => {
           </Link>
         ))}
       </ul>
+      <BackButton />
     </div>
   );
 };

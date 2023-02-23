@@ -39,3 +39,7 @@
   img {
     border-radius: 5px;
   }
+
+  audio::-webkit-media-controls-panel{
+    background-color: var(--secondary);
+  }
