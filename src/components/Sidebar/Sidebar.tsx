@@ -17,14 +17,14 @@ const Sidebar: FC<SidebarProps> = ({ title, author, cover, description, children
   const { by } = SidebarContent;
 
   return (
-    <div className={SidebarStyles.layout}>
+    <div className={SidebarStyles.layout} data-testid="sidebar">
       <aside className={SidebarStyles.container}>
         <div className={SidebarStyles.cover}>
           <Link to={`/podcast/${id}`}>
             <img src={cover} alt={title} />
           </Link>
           <Link to={`/podcast/${id}`}>
-            <p>
+            <p data-testid="title">
               {title}
               <span>
                 {by} {author}
@@ -33,7 +33,7 @@ const Sidebar: FC<SidebarProps> = ({ title, author, cover, description, children
           </Link>
         </div>
         <div className={SidebarStyles.description}>
-          <p>{description}</p>
+          <p data-testid="description">{description}</p>
         </div>
       </aside>
       {children}

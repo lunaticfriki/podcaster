@@ -38,7 +38,7 @@ const Home: FC = () => {
   return (
     <div className={HomeStyles.container}>
       <div className={HomeStyles.header}>
-        <Counter count={list.length} />
+        <Counter count={list?.length} />
         <Search fn={getFilter} />
       </div>
       <div className={HomeStyles.cardList}>
