@@ -17,7 +17,7 @@ const Podcast: FC = () => {
   if (isLoading && !data) {
     return <Loader />;
   } else {
-    const { artistName, name, description, image, id: podcastId } = data.attributes;
+    const { artistName, name, description, image, id: podcastId } = data?.attributes;
 
     return (
       <div className={PodcastStyles.container}>
