@@ -19,6 +19,5 @@ export const fetchPodcast = async ({
   if (!res.ok) {
     throw new Error(`${FetchError} ${id}`);
   }
-  console.log(res);
   return res.json();
 };

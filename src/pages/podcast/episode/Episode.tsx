@@ -2,6 +2,7 @@ import { Suspense, lazy } from 'react';
 
 import Detail from '../../../components/Podcast/Detail';
 import { EpisodesData } from '../../../../server/src/feed/detail-types';
+import ErrorPage from '../../ErrorPage';
 import { FC } from 'react';
 import Loader from '../../../components/common/Loader';
 import { fetchPodcast } from '../../../utils';
@@ -25,16 +26,20 @@ const Episode: FC = () => {
 
     return (
       <Suspense>
-        <Sidebar
-          title={name}
-          author={artistName}
-          cover={image[2].label}
-          description={parse(description.standard)}
-        >
-          <Suspense>
-            <Detail episodeDetail={episode.attributes} />
-          </Suspense>
-        </Sidebar>
+        {episode ? (
+          <Sidebar
+            title={name}
+            author={artistName}
+            cover={image[2].label}
+            description={parse(description.standard)}
+          >
+            <Suspense>
+              <Detail episodeDetail={episode.attributes} />
+            </Suspense>
+          </Sidebar>
+        ) : (
+          <ErrorPage />
+        )}
       </Suspense>
     );
   }
