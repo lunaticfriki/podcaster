@@ -1,7 +1,7 @@
 import { FC, ReactNode } from 'react';
+import { PathsContent, SidebarContent } from '../../content/';
 
 import { Link } from 'react-router-dom';
-import { SidebarContent } from '../../content/';
 import SidebarStyles from './Sidebar.module.scss';
 
 interface SidebarProps {
@@ -15,15 +15,16 @@ interface SidebarProps {
 
 const Sidebar: FC<SidebarProps> = ({ title, author, cover, description, children, id }) => {
   const { by } = SidebarContent;
+  const { podcast } = PathsContent;
 
   return (
     <div className={SidebarStyles.layout} data-testid="sidebar">
       <aside className={SidebarStyles.container}>
         <div className={SidebarStyles.cover}>
-          <Link to={`/podcast/${id}`}>
+          <Link to={`${podcast}${id}`}>
             <img src={cover} alt={title} />
           </Link>
-          <Link to={`/podcast/${id}`}>
+          <Link to={`${podcast}${id}`}>
             <p data-testid="title">
               {title}
               <span>
