@@ -9,7 +9,7 @@ interface ListElementProps {
 
 const ListElement: FC<ListElementProps> = ({ name, date, duration }) => {
   return (
-    <li className={ListElementStyles.element}>
+    <li className={ListElementStyles.element} data-testid="list-element">
       <h4>{name}</h4>
       <h5>{date}</h5>
       <h5>{duration}</h5>

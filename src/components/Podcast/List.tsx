@@ -19,7 +19,7 @@ const List: FC<ListProps> = ({ count, episodes }) => {
   if (!episodes) return <Loader />;
 
   return (
-    <div className={ListStyles.container}>
+    <div className={ListStyles.container} data-testid="list">
       <p>Episodes: {count}</p>
       <ul>
         {episodes.map((el) => (
