@@ -14,10 +14,10 @@ const Detail: FC<DetailProps> = ({ episodeDetail }) => {
     url,
   } = episodeDetail;
   return (
-    <div className={DetailStyles.container}>
+    <div className={DetailStyles.container} data-testid="detail">
       <h3>{name}</h3>
-      <p>{parse(standard)}</p>
-      <audio controls className={DetailStyles.audio}>
+      <p data-testid="description">{parse(standard)}</p>
+      <audio controls className={DetailStyles.audio} data-testid="audio">
         <source src={url} type="audio/mp3" />
       </audio>
       <BackButton />

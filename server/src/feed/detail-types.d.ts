@@ -159,7 +159,7 @@ export interface EpisodeAttributes {
   topics: Topic[];
   kind: string;
   mediaKind: string;
-  description: FluffyDescription;
+  description: EpisodeDescription;
   artwork: Artwork;
   url: string;
   releaseDateTime: string;
@@ -168,12 +168,12 @@ export interface EpisodeAttributes {
   name: string;
   guid: string;
   artistName: string;
-  contentRating: ContentRating;
+  contentRating: string;
   subscribable: boolean;
   assetUrl: string;
 }
 
-export interface FluffyDescription {
+export interface EpisodeDescription {
   standard: string;
   short: string;
 }

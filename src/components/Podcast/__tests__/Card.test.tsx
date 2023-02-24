@@ -1,6 +1,5 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen } from '../../../test/test-utils';
 
-import { BrowserRouter } from 'react-router-dom';
 import Card from '../Card';
 
 interface testPropsI {
@@ -19,11 +18,7 @@ const testProps: testPropsI = {
 
 describe('Card component test suite', () => {
   beforeEach(() => {
-    render(
-      <BrowserRouter>
-        <Card {...testProps} />
-      </BrowserRouter>
-    );
+    render(<Card {...testProps} />);
   });
 
   it('should render correctly', () => {

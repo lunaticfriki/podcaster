@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen } from '../../test/test-utils';
 
 import { BrowserRouter } from 'react-router-dom';
 import Header from './Header';
@@ -8,11 +8,7 @@ import { beforeEach } from 'vitest';
 describe('Header component test suite', () => {
   const { title } = HeaderContent;
   beforeEach(() => {
-    render(
-      <BrowserRouter>
-        <Header />
-      </BrowserRouter>
-    );
+    render(<Header />);
   });
   it('should displaty the title', () => {
     const headerTitle = screen.getByTestId('title');
