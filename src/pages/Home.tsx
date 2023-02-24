@@ -1,6 +1,7 @@
 import { FC, useEffect, useState } from 'react';
 
 import Card from '../components/Podcast/Card';
+import Counter from '../components/counter/Counter';
 import { Entry } from '../../server/src/feed/feed-types';
 import HomeStyles from './styles/Home.module.scss';
 import Loader from '../components/common/Loader';
@@ -36,7 +37,10 @@ const Home: FC = () => {
 
   return (
     <div className={HomeStyles.container}>
-      <Search fn={getFilter} />
+      <div className={HomeStyles.header}>
+        <Counter count={list.length} />
+        <Search fn={getFilter} />
+      </div>
       <div className={HomeStyles.cardList}>
         {list && list.length
           ? list.map((el: Entry) => (

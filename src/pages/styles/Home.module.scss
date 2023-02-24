@@ -9,6 +9,14 @@
     width: 100%;
 }
 
+.header {
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: 3rem 1fr;
+    place-items: center;
+
+}
+
 .cardList {
     display: flex;
     flex-wrap: wrap;
