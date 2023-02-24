@@ -6,7 +6,7 @@ import { Entry } from '../../server/src/feed/feed-types';
 import HomeStyles from './styles/Home.module.scss';
 import Loader from '../components/common/Loader';
 import Search from '../components/search/Search';
-import { fetchPodcasts } from '../utils';
+import { fetchPodcast } from '../utils';
 import { useQuery } from '@tanstack/react-query';
 
 const Home: FC = () => {
@@ -17,19 +17,19 @@ const Home: FC = () => {
     setSearch(filter);
   };
 
-  const { isLoading, data } = useQuery(['podcasts'], fetchPodcasts);
+  const { isLoading, data } = useQuery(['podcast', ''], fetchPodcast);
 
   useEffect(() => {
     if (search !== '') {
       setList(
-        data?.feed?.entry.filter(
+        data?.mainPodcastInfo?.feed?.entry.filter(
           (el: Entry) =>
             el.title.label.toLowerCase().includes(search.toLowerCase()) ||
             el['im:artist'].label.toLowerCase().includes(search.toLowerCase())
         )
       );
     } else {
-      setList(data?.feed?.entry);
+      setList(data?.mainPodcastInfo.feed?.entry);
     }
   }, [data, search]);
 
@@ -50,6 +50,7 @@ const Home: FC = () => {
                 author={el['im:artist'].label}
                 image={el['im:image'][2].label}
                 id={el.id.attributes['im:id']}
+                description={el.summary.label}
               />
             ))
           : null}

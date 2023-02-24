@@ -1,2 +1,2 @@
-export { fetchPodcast, fetchPodcasts } from './fetchPodcasts';
+export { fetchPodcast } from './fetchPodcasts';
 export { getDuration } from './duration';

@@ -1,17 +1,12 @@
 import BackButton from '../common/BackButton';
-import { EpisodesData } from '../../../server/src/feed/detail-types';
 import { FC } from 'react';
 import { Link } from 'react-router-dom';
 import ListElement from './ListElement';
+import { ListProps } from '../../types';
 import ListStyles from './List.module.scss';
 import Loader from '../common/Loader';
 import { getDuration } from '../../utils';
 import { useParams } from 'react-router-dom';
-
-interface ListProps {
-  count: string;
-  episodes: EpisodesData[];
-}
 
 const List: FC<ListProps> = ({ count, episodes }) => {
   const { id } = useParams();
@@ -23,11 +18,11 @@ const List: FC<ListProps> = ({ count, episodes }) => {
       <p>Episodes: {count}</p>
       <ul>
         {episodes.map((el) => (
-          <Link to={`/podcast/${id}/episode/${el.id}`} key={el.id}>
+          <Link to={`/podcast/${id}/episode/${el.artistIds[0]}`} key={el.trackName}>
             <ListElement
-              name={el.attributes?.name}
-              date={el.attributes?.releaseDateTime.slice(0, 10)}
-              duration={getDuration(el.attributes?.durationInMilliseconds)}
+              name={el.trackName}
+              date={el.releaseDate.slice(0, 10)}
+              duration={getDuration(el.trackTimeMillis)}
             />
           </Link>
         ))}

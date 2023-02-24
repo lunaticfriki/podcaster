@@ -1,6 +1,5 @@
 .element {
     border-block-end: 1px solid var(--white);
-   
     list-style: none;
     padding: 2rem;
     transition: .3s ease-in-out;
@@ -15,5 +14,6 @@
         display: grid;
         grid-gap:1rem;
         grid-template-columns: repeat(3, 1fr);
+        place-items: center;
     }
 }

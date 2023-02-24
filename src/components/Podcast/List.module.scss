@@ -1,7 +1,9 @@
 .container {
+    overflow-y: scroll;
     padding: 1rem;
     
     @media (min-width: 992px) {
+       max-height: 1000px;
        padding: 2rem;
     }
 }

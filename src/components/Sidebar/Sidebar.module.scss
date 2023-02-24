@@ -1,10 +1,10 @@
 .layout {
     display: grid;
-    height: 100%;
+    overflow: hidden;
     width: 100%;
 
-      @media (min-width: 992px) {
-       grid-template-columns: 30% 1fr;
+    @media (min-width: 992px) {
+        grid-template-columns: 30% 1fr;
     }
 }
 .container {

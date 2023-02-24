@@ -7,13 +7,14 @@ interface CardProps {
   image: string;
   author: string;
   id: string;
+  description: string;
 }
 
-const Card: FC<CardProps> = ({ title, image, author, id }) => {
+const Card: FC<CardProps> = ({ title, image, author, id, description }) => {
   const { podcast } = PathsContent;
-
+ 
   return (
-    <Link to={`${podcast}${id}`} state={{ image }}>
+    <Link to={`${podcast}${id}`} state={{ title, image, author, id, description }}>
       <article className={CardStyles.container}>
         <img src={image} alt={title} />
         <div className={CardStyles.info}>
