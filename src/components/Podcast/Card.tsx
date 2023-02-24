@@ -18,7 +18,7 @@ const Card: FC<CardProps> = ({ title, image, author, id }) => {
         <img src={image} alt={title} />
         <div className={CardStyles.info}>
           <h3>{title}</h3>
-          <p>{author}</p>
+          <p data-testid="author">{author}</p>
         </div>
       </article>
     </Link>
