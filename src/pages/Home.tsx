@@ -50,7 +50,6 @@ const Home: FC = () => {
                 author={el['im:artist'].label}
                 image={el['im:image'][2].label}
                 id={el.id.attributes['im:id']}
-                description={el.summary.label}
               />
             ))
           : null}
