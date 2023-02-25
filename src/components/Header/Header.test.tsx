@@ -1,8 +1,8 @@
-import { beforeEach } from 'vitest';
-
-import { HeaderContent } from '../../content';
 import { render, screen } from '../../test/test-utils';
+
 import Header from './Header';
+import { HeaderContent } from '../../content';
+import { beforeEach } from 'vitest';
 
 describe('Header component test suite', () => {
   const { title } = HeaderContent;
