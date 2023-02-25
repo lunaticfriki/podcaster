@@ -1,7 +1,6 @@
-import { FC } from 'react';
-
 import { ErrorPageContent } from '../content';
 import ErrorPageStyles from './styles/ErrorPage.module.scss';
+import { FC } from 'react';
 
 const ErrorPage: FC = () => {
   const { title, status_code } = ErrorPageContent;

@@ -1,7 +1,7 @@
 import { FC, ReactNode } from 'react';
-import { Link } from 'react-router-dom';
-
 import { PathsContent, SidebarContent } from '../../content/';
+
+import { Link } from 'react-router-dom';
 import SidebarStyles from './Sidebar.module.scss';
 
 interface SidebarProps {

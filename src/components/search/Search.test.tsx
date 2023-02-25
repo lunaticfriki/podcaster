@@ -1,7 +1,7 @@
-import { vi } from 'vitest';
-
 import { fireEvent, render, screen } from '../../test/test-utils';
+
 import Search from './Search';
+import { vi } from 'vitest';
 
 describe('Search component test suite', () => {
   const fn = vi.fn();

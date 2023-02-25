@@ -1,13 +1,13 @@
-import { useQuery } from '@tanstack/react-query';
-import { lazy, Suspense } from 'react';
-import { FC } from 'react';
-import { useParams } from 'react-router-dom';
+import { Suspense, lazy } from 'react';
 
-import Loader from '../../components/common/Loader';
 import { Entry } from '../../types';
-import { fetchPodcast } from '../../utils';
 import ErrorPage from '../ErrorPage';
+import { FC } from 'react';
+import Loader from '../../components/common/Loader';
 import PodcastStyles from './Podcast.module.scss';
+import { fetchPodcast } from '../../utils';
+import { useParams } from 'react-router-dom';
+import { useQuery } from '@tanstack/react-query';
 
 const List = lazy(() => import('../../components/Podcast/List'));
 const Sidebar = lazy(() => import('../../components/Sidebar/Sidebar'));

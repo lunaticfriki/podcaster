@@ -1,9 +1,8 @@
-import parse from 'html-react-parser';
-import { FC } from 'react';
-
-import { Episode } from '../../types';
 import BackButton from '../common/BackButton';
 import DetailStyles from './Detail.module.scss';
+import { Episode } from '../../types';
+import { FC } from 'react';
+import parse from 'html-react-parser';
 
 interface DetailProps {
   episodeDetail: Episode;

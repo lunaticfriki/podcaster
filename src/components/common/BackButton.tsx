@@ -1,7 +1,6 @@
-import { useNavigate } from 'react-router-dom';
-
-import { ButtonContent } from '../../content';
 import BackButtonStyles from './BackButton.module.scss';
+import { ButtonContent } from '../../content';
+import { useNavigate } from 'react-router-dom';
 
 const BackButton = () => {
   const navigate = useNavigate();

@@ -1,6 +1,5 @@
-import { QueryFunctionContext } from '@tanstack/react-query';
-
 import { FetchError } from '../content';
+import { QueryFunctionContext } from '@tanstack/react-query';
 
 export const fetchPodcast = async ({ queryKey }: QueryFunctionContext<[string, string | null | undefined]>) => {
   const id = queryKey[1];

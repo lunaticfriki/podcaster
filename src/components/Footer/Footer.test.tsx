@@ -1,6 +1,7 @@
-import { FooterContent } from '../../content/';
 import { render, screen } from '../../test/test-utils';
+
 import Footer from './Footer';
+import { FooterContent } from '../../content/';
 
 describe('Footer component test suite', () => {
   const { github_url, signature, year } = FooterContent;

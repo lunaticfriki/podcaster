@@ -1,6 +1,7 @@
 import { render, screen } from '../../../test/test-utils';
-import { Episode } from '../../../types';
+
 import Detail from '../Detail';
+import { Episode } from '../../../types';
 import { Detail as MockDetail } from './__mocks__';
 
 const testProps: Episode = MockDetail;

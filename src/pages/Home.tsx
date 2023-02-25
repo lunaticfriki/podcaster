@@ -1,13 +1,13 @@
-import { useQuery } from '@tanstack/react-query';
 import { FC, useEffect, useState } from 'react';
 
-import Loader from '../components/common/Loader';
-import Counter from '../components/counter/Counter';
 import Card from '../components/Podcast/Card';
-import Search from '../components/search/Search';
+import Counter from '../components/counter/Counter';
 import { Entry } from '../types';
-import { fetchPodcast } from '../utils';
 import HomeStyles from './styles/Home.module.scss';
+import Loader from '../components/common/Loader';
+import Search from '../components/search/Search';
+import { fetchPodcast } from '../utils';
+import { useQuery } from '@tanstack/react-query';
 
 const Home: FC = () => {
   const [search, setSearch] = useState('');

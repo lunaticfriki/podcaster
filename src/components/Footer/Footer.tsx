@@ -1,5 +1,4 @@
 import { FC } from 'react';
-
 import { FooterContent } from '../../content/';
 import FooterStyles from './Footer.module.scss';
 

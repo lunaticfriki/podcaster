@@ -1,7 +1,7 @@
 import { ChangeEvent, FC, useEffect, useState } from 'react';
 
-import { SearchContent } from '../../content';
 import { CallbackFunction } from '../../types';
+import { SearchContent } from '../../content';
 import SearchStyles from './Search.module.scss';
 
 interface SearchProps {
