@@ -1,13 +1,13 @@
+import { useQuery } from '@tanstack/react-query';
 import { FC, useEffect, useState } from 'react';
 
-import Card from '../components/Podcast/Card';
-import Counter from '../components/counter/Counter';
 import { Entry } from '../../server/src/feed/feed-types';
-import HomeStyles from './styles/Home.module.scss';
 import Loader from '../components/common/Loader';
+import Counter from '../components/counter/Counter';
+import Card from '../components/Podcast/Card';
 import Search from '../components/search/Search';
 import { fetchPodcast } from '../utils';
-import { useQuery } from '@tanstack/react-query';
+import HomeStyles from './styles/Home.module.scss';
 
 const Home: FC = () => {
   const [search, setSearch] = useState('');
@@ -25,8 +25,8 @@ const Home: FC = () => {
         data?.mainPodcastInfo?.feed?.entry.filter(
           (el: Entry) =>
             el.title.label.toLowerCase().includes(search.toLowerCase()) ||
-            el['im:artist'].label.toLowerCase().includes(search.toLowerCase())
-        )
+            el['im:artist'].label.toLowerCase().includes(search.toLowerCase()),
+        ),
       );
     } else {
       setList(data?.mainPodcastInfo.feed?.entry);

@@ -1,5 +1,4 @@
 import { render, screen } from '../../test/test-utils';
-
 import Counter from './Counter';
 
 interface testPropsI {

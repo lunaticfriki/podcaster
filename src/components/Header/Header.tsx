@@ -1,8 +1,8 @@
-import { HeaderContent, PathsContent } from '../../content';
-
 import { FC } from 'react';
-import HeaderStyles from './Headser.module.scss';
 import { Link } from 'react-router-dom';
+
+import { HeaderContent, PathsContent } from '../../content';
+import HeaderStyles from './Headser.module.scss';
 
 const Header: FC = () => {
   const { title } = HeaderContent;

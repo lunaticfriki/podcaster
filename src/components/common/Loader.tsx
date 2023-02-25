@@ -1,4 +1,5 @@
 import { FC } from 'react';
+
 import LoaderStyles from './Loader.module.scss';
 import Spinner from './Spinner';
 

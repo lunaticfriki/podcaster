@@ -1,4 +1,5 @@
 import { FC } from 'react';
+
 import { FooterContent } from '../../content/';
 import FooterStyles from './Footer.module.scss';
 
@@ -7,12 +8,7 @@ const Footer: FC = () => {
 
   return (
     <footer className={FooterStyles.container}>
-      <a
-        href={github_url}
-        className={FooterStyles.signature}
-        target="_blank"
-        data-testid="signature"
-      >
+      <a href={github_url} className={FooterStyles.signature} target="_blank" data-testid="signature" rel="noreferrer">
         {signature}
         <span className={FooterStyles.year} data-testid="year">
           {year}

@@ -1,5 +1,4 @@
-import { getByTestId, render, screen } from '../../../test/test-utils';
-
+import { render, screen } from '../../../test/test-utils';
 import ListElement from '../ListElement';
 
 interface testPropsI {

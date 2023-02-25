@@ -1,5 +1,4 @@
 import { render, screen } from '../../test/test-utils';
-
 import Sidebar from './Sidebar';
 
 interface testPropsI {

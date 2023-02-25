@@ -1,13 +1,13 @@
-import { Suspense, lazy } from 'react';
-
-import Detail from '../../../components/Podcast/Detail';
-import EpisodeStyles from './Episode.module.scss';
-import ErrorPage from '../../ErrorPage';
-import { FC } from 'react';
-import Loader from '../../../components/common/Loader';
-import { fetchPodcast } from '../../../utils';
-import { useParams } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
+import { lazy, Suspense } from 'react';
+import { FC } from 'react';
+import { useParams } from 'react-router-dom';
+
+import Loader from '../../../components/common/Loader';
+import Detail from '../../../components/Podcast/Detail';
+import { fetchPodcast } from '../../../utils';
+import ErrorPage from '../../ErrorPage';
+import EpisodeStyles from './Episode.module.scss';
 
 const Sidebar = lazy(() => import('../../../components/Sidebar/Sidebar'));
 
@@ -23,16 +23,14 @@ const Episode: FC = () => {
     return <ErrorPage />;
   }
 
-  const podcast = data?.mainPodcastInfo.feed.entry.find(
-    (entry: any) => entry.id.attributes['im:id'] === id
-  );
+  const podcast = data?.mainPodcastInfo.feed.entry.find((entry: any) => entry.id.attributes['im:id'] === id);
 
   const episode = data?.episodes?.find((el: any) => el.trackId.toString() === episodeId);
 
   return (
     <Suspense>
       <div className={EpisodeStyles.container}>
-        {true ? (
+        {
           <Sidebar
             title={data?.info.results[0].trackName}
             author={data?.info.results[0].artistName}
@@ -44,9 +42,7 @@ const Episode: FC = () => {
               <Detail episodeDetail={episode} />
             </Suspense>
           </Sidebar>
-        ) : (
-          <ErrorPage />
-        )}
+        }
       </div>
     </Suspense>
   );

@@ -36,6 +36,5 @@ export const Detail = {
   wrapperType: 'podcastEpisode',
   trackTimeMillis: 9380000,
   episodeUrl: 'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_605.mp3?dest-id=2422538',
-  collectionViewUrl:
-    'https://itunes.apple.com/us/podcast/the-joe-budden-podcast/id1535809341?mt=2&uo=4',
+  collectionViewUrl: 'https://itunes.apple.com/us/podcast/the-joe-budden-podcast/id1535809341?mt=2&uo=4',
 };

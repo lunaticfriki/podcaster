@@ -33,6 +33,7 @@ pnpm test:ui
 ```
 
 To format the code:
+
 ```
 pnpm format
 ```

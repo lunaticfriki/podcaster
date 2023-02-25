@@ -1,12 +1,13 @@
-import BackButton from '../common/BackButton';
 import { FC } from 'react';
 import { Link } from 'react-router-dom';
-import ListElement from './ListElement';
-import { ListProps } from '../../types';
-import ListStyles from './List.module.scss';
-import Loader from '../common/Loader';
-import { getDuration } from '../../utils';
 import { useParams } from 'react-router-dom';
+
+import { ListProps } from '../../types';
+import { getDuration } from '../../utils';
+import BackButton from '../common/BackButton';
+import Loader from '../common/Loader';
+import ListStyles from './List.module.scss';
+import ListElement from './ListElement';
 
 const List: FC<ListProps> = ({ count, episodes }) => {
   const { id } = useParams();

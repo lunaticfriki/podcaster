@@ -1,4 +1,5 @@
 import { FC } from 'react';
+
 import { SpinnerIcon } from './Icons';
 import SpinnerStyles from './Spinner.module.scss';
 

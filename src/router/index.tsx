@@ -1,5 +1,5 @@
-import { Route, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
-import { Suspense, lazy } from 'react';
+import { lazy, Suspense } from 'react';
+import { createBrowserRouter, createRoutesFromElements, Route } from 'react-router-dom';
 
 const Home = lazy(() => import('../pages/Home'));
 const Layout = lazy(() => import('../layout/Layout'));
@@ -42,6 +42,6 @@ export const router = createBrowserRouter(
           </Suspense>
         }
       />
-    </Route>
-  )
+    </Route>,
+  ),
 );

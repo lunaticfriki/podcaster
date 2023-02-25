@@ -3,8 +3,7 @@ export const List = [
     country: 'USA',
     feedUrl: 'https://jbpod.libsyn.com/applepodcast',
     contentAdvisoryRating: 'Explicit',
-    previewUrl:
-      'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_605.mp3?dest-id=2422538',
+    previewUrl: 'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_605.mp3?dest-id=2422538',
     artistViewUrl: 'https://itunes.apple.com/us/artist/the-joe-budden-network/1535844019?mt=2&uo=4',
     trackViewUrl:
       'https://podcasts.apple.com/us/podcast/episode-605-3-hookah-tips-in-his-mouth/id1535809341?i=1000601545042&uo=4',
@@ -37,20 +36,16 @@ export const List = [
     kind: 'podcast-episode',
     wrapperType: 'podcastEpisode',
     trackTimeMillis: 9380000,
-    episodeUrl:
-      'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_605.mp3?dest-id=2422538',
-    collectionViewUrl:
-      'https://itunes.apple.com/us/podcast/the-joe-budden-podcast/id1535809341?mt=2&uo=4',
+    episodeUrl: 'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_605.mp3?dest-id=2422538',
+    collectionViewUrl: 'https://itunes.apple.com/us/podcast/the-joe-budden-podcast/id1535809341?mt=2&uo=4',
   },
   {
     country: 'USA',
     feedUrl: 'https://jbpod.libsyn.com/applepodcast',
     contentAdvisoryRating: 'Explicit',
-    previewUrl:
-      'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_604_1.mp3?dest-id=2422538',
+    previewUrl: 'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_604_1.mp3?dest-id=2422538',
     artistViewUrl: 'https://itunes.apple.com/us/artist/the-joe-budden-network/1535844019?mt=2&uo=4',
-    trackViewUrl:
-      'https://podcasts.apple.com/us/podcast/episode-604-enjoy-homeboy/id1535809341?i=1000601100410&uo=4',
+    trackViewUrl: 'https://podcasts.apple.com/us/podcast/episode-604-enjoy-homeboy/id1535809341?i=1000601100410&uo=4',
     artworkUrl60:
       'https://is2-ssl.mzstatic.com/image/thumb/Podcasts113/v4/f2/21/fa/f221fabd-017f-5125-633b-f1fe4f39802a/mza_182995249085044287.jpg/60x60bb.jpg',
     artworkUrl600:
@@ -80,20 +75,16 @@ export const List = [
     kind: 'podcast-episode',
     wrapperType: 'podcastEpisode',
     trackTimeMillis: 9490000,
-    episodeUrl:
-      'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_604_1.mp3?dest-id=2422538',
-    collectionViewUrl:
-      'https://itunes.apple.com/us/podcast/the-joe-budden-podcast/id1535809341?mt=2&uo=4',
+    episodeUrl: 'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_604_1.mp3?dest-id=2422538',
+    collectionViewUrl: 'https://itunes.apple.com/us/podcast/the-joe-budden-podcast/id1535809341?mt=2&uo=4',
   },
   {
     country: 'USA',
     feedUrl: 'https://jbpod.libsyn.com/applepodcast',
     contentAdvisoryRating: 'Explicit',
-    previewUrl:
-      'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_603.mp3?dest-id=2422538',
+    previewUrl: 'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_603.mp3?dest-id=2422538',
     artistViewUrl: 'https://itunes.apple.com/us/artist/the-joe-budden-network/1535844019?mt=2&uo=4',
-    trackViewUrl:
-      'https://podcasts.apple.com/us/podcast/episode-603-god-dad-did/id1535809341?i=1000600305730&uo=4',
+    trackViewUrl: 'https://podcasts.apple.com/us/podcast/episode-603-god-dad-did/id1535809341?i=1000600305730&uo=4',
     artworkUrl60:
       'https://is2-ssl.mzstatic.com/image/thumb/Podcasts113/v4/f2/21/fa/f221fabd-017f-5125-633b-f1fe4f39802a/mza_182995249085044287.jpg/60x60bb.jpg',
     artworkUrl600:
@@ -123,20 +114,16 @@ export const List = [
     kind: 'podcast-episode',
     wrapperType: 'podcastEpisode',
     trackTimeMillis: 10610000,
-    episodeUrl:
-      'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_603.mp3?dest-id=2422538',
-    collectionViewUrl:
-      'https://itunes.apple.com/us/podcast/the-joe-budden-podcast/id1535809341?mt=2&uo=4',
+    episodeUrl: 'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_603.mp3?dest-id=2422538',
+    collectionViewUrl: 'https://itunes.apple.com/us/podcast/the-joe-budden-podcast/id1535809341?mt=2&uo=4',
   },
   {
     country: 'USA',
     feedUrl: 'https://jbpod.libsyn.com/applepodcast',
     contentAdvisoryRating: 'Explicit',
-    previewUrl:
-      'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_602.mp3?dest-id=2422538',
+    previewUrl: 'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_602.mp3?dest-id=2422538',
     artistViewUrl: 'https://itunes.apple.com/us/artist/the-joe-budden-network/1535844019?mt=2&uo=4',
-    trackViewUrl:
-      'https://podcasts.apple.com/us/podcast/episode-602-the-honey-pack/id1535809341?i=1000599713875&uo=4',
+    trackViewUrl: 'https://podcasts.apple.com/us/podcast/episode-602-the-honey-pack/id1535809341?i=1000599713875&uo=4',
     artworkUrl60:
       'https://is2-ssl.mzstatic.com/image/thumb/Podcasts113/v4/f2/21/fa/f221fabd-017f-5125-633b-f1fe4f39802a/mza_182995249085044287.jpg/60x60bb.jpg',
     artworkUrl600:
@@ -166,17 +153,14 @@ export const List = [
     kind: 'podcast-episode',
     wrapperType: 'podcastEpisode',
     trackTimeMillis: 11029000,
-    episodeUrl:
-      'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_602.mp3?dest-id=2422538',
-    collectionViewUrl:
-      'https://itunes.apple.com/us/podcast/the-joe-budden-podcast/id1535809341?mt=2&uo=4',
+    episodeUrl: 'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_602.mp3?dest-id=2422538',
+    collectionViewUrl: 'https://itunes.apple.com/us/podcast/the-joe-budden-podcast/id1535809341?mt=2&uo=4',
   },
   {
     country: 'USA',
     feedUrl: 'https://jbpod.libsyn.com/applepodcast',
     contentAdvisoryRating: 'Clean',
-    previewUrl:
-      'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_601.mp3?dest-id=2422538',
+    previewUrl: 'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_601.mp3?dest-id=2422538',
     artistViewUrl: 'https://itunes.apple.com/us/artist/the-joe-budden-network/1535844019?mt=2&uo=4',
     trackViewUrl:
       'https://podcasts.apple.com/us/podcast/episode-601-press-pay-to-play/id1535809341?i=1000599125603&uo=4',
@@ -209,20 +193,16 @@ export const List = [
     kind: 'podcast-episode',
     wrapperType: 'podcastEpisode',
     trackTimeMillis: 9698000,
-    episodeUrl:
-      'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_601.mp3?dest-id=2422538',
-    collectionViewUrl:
-      'https://itunes.apple.com/us/podcast/the-joe-budden-podcast/id1535809341?mt=2&uo=4',
+    episodeUrl: 'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_601.mp3?dest-id=2422538',
+    collectionViewUrl: 'https://itunes.apple.com/us/podcast/the-joe-budden-podcast/id1535809341?mt=2&uo=4',
   },
   {
     country: 'USA',
     feedUrl: 'https://jbpod.libsyn.com/applepodcast',
     contentAdvisoryRating: 'Explicit',
-    previewUrl:
-      'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_600.mp3?dest-id=2422538',
+    previewUrl: 'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_600.mp3?dest-id=2422538',
     artistViewUrl: 'https://itunes.apple.com/us/artist/the-joe-budden-network/1535844019?mt=2&uo=4',
-    trackViewUrl:
-      'https://podcasts.apple.com/us/podcast/episode-600-the-pandys/id1535809341?i=1000598612965&uo=4',
+    trackViewUrl: 'https://podcasts.apple.com/us/podcast/episode-600-the-pandys/id1535809341?i=1000598612965&uo=4',
     artworkUrl60:
       'https://is2-ssl.mzstatic.com/image/thumb/Podcasts113/v4/f2/21/fa/f221fabd-017f-5125-633b-f1fe4f39802a/mza_182995249085044287.jpg/60x60bb.jpg',
     artworkUrl600:
@@ -252,20 +232,16 @@ export const List = [
     kind: 'podcast-episode',
     wrapperType: 'podcastEpisode',
     trackTimeMillis: 11553000,
-    episodeUrl:
-      'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_600.mp3?dest-id=2422538',
-    collectionViewUrl:
-      'https://itunes.apple.com/us/podcast/the-joe-budden-podcast/id1535809341?mt=2&uo=4',
+    episodeUrl: 'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_600.mp3?dest-id=2422538',
+    collectionViewUrl: 'https://itunes.apple.com/us/podcast/the-joe-budden-podcast/id1535809341?mt=2&uo=4',
   },
   {
     country: 'USA',
     feedUrl: 'https://jbpod.libsyn.com/applepodcast',
     contentAdvisoryRating: 'Explicit',
-    previewUrl:
-      'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_599.mp3?dest-id=2422538',
+    previewUrl: 'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_599.mp3?dest-id=2422538',
     artistViewUrl: 'https://itunes.apple.com/us/artist/the-joe-budden-network/1535844019?mt=2&uo=4',
-    trackViewUrl:
-      'https://podcasts.apple.com/us/podcast/episode-599-ishmor%C3%A9/id1535809341?i=1000597971769&uo=4',
+    trackViewUrl: 'https://podcasts.apple.com/us/podcast/episode-599-ishmor%C3%A9/id1535809341?i=1000597971769&uo=4',
     artworkUrl60:
       'https://is2-ssl.mzstatic.com/image/thumb/Podcasts113/v4/f2/21/fa/f221fabd-017f-5125-633b-f1fe4f39802a/mza_182995249085044287.jpg/60x60bb.jpg',
     artworkUrl600:
@@ -295,20 +271,16 @@ export const List = [
     kind: 'podcast-episode',
     wrapperType: 'podcastEpisode',
     trackTimeMillis: 8384000,
-    episodeUrl:
-      'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_599.mp3?dest-id=2422538',
-    collectionViewUrl:
-      'https://itunes.apple.com/us/podcast/the-joe-budden-podcast/id1535809341?mt=2&uo=4',
+    episodeUrl: 'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_599.mp3?dest-id=2422538',
+    collectionViewUrl: 'https://itunes.apple.com/us/podcast/the-joe-budden-podcast/id1535809341?mt=2&uo=4',
   },
   {
     country: 'USA',
     feedUrl: 'https://jbpod.libsyn.com/applepodcast',
     contentAdvisoryRating: 'Explicit',
-    previewUrl:
-      'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_598.mp3?dest-id=2422538',
+    previewUrl: 'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_598.mp3?dest-id=2422538',
     artistViewUrl: 'https://itunes.apple.com/us/artist/the-joe-budden-network/1535844019?mt=2&uo=4',
-    trackViewUrl:
-      'https://podcasts.apple.com/us/podcast/episode-598-cuticle-conan/id1535809341?i=1000597525320&uo=4',
+    trackViewUrl: 'https://podcasts.apple.com/us/podcast/episode-598-cuticle-conan/id1535809341?i=1000597525320&uo=4',
     artworkUrl60:
       'https://is2-ssl.mzstatic.com/image/thumb/Podcasts113/v4/f2/21/fa/f221fabd-017f-5125-633b-f1fe4f39802a/mza_182995249085044287.jpg/60x60bb.jpg',
     artworkUrl600:
@@ -338,20 +310,16 @@ export const List = [
     kind: 'podcast-episode',
     wrapperType: 'podcastEpisode',
     trackTimeMillis: 10710000,
-    episodeUrl:
-      'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_598.mp3?dest-id=2422538',
-    collectionViewUrl:
-      'https://itunes.apple.com/us/podcast/the-joe-budden-podcast/id1535809341?mt=2&uo=4',
+    episodeUrl: 'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_598.mp3?dest-id=2422538',
+    collectionViewUrl: 'https://itunes.apple.com/us/podcast/the-joe-budden-podcast/id1535809341?mt=2&uo=4',
   },
   {
     country: 'USA',
     feedUrl: 'https://jbpod.libsyn.com/applepodcast',
     contentAdvisoryRating: 'Clean',
-    previewUrl:
-      'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_597.mp3?dest-id=2422538',
+    previewUrl: 'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_597.mp3?dest-id=2422538',
     artistViewUrl: 'https://itunes.apple.com/us/artist/the-joe-budden-network/1535844019?mt=2&uo=4',
-    trackViewUrl:
-      'https://podcasts.apple.com/us/podcast/episode-597-opp-formers/id1535809341?i=1000597031649&uo=4',
+    trackViewUrl: 'https://podcasts.apple.com/us/podcast/episode-597-opp-formers/id1535809341?i=1000597031649&uo=4',
     artworkUrl60:
       'https://is2-ssl.mzstatic.com/image/thumb/Podcasts113/v4/f2/21/fa/f221fabd-017f-5125-633b-f1fe4f39802a/mza_182995249085044287.jpg/60x60bb.jpg',
     artworkUrl600:
@@ -381,20 +349,16 @@ export const List = [
     kind: 'podcast-episode',
     wrapperType: 'podcastEpisode',
     trackTimeMillis: 11022000,
-    episodeUrl:
-      'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_597.mp3?dest-id=2422538',
-    collectionViewUrl:
-      'https://itunes.apple.com/us/podcast/the-joe-budden-podcast/id1535809341?mt=2&uo=4',
+    episodeUrl: 'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_597.mp3?dest-id=2422538',
+    collectionViewUrl: 'https://itunes.apple.com/us/podcast/the-joe-budden-podcast/id1535809341?mt=2&uo=4',
   },
   {
     country: 'USA',
     feedUrl: 'https://jbpod.libsyn.com/applepodcast',
     contentAdvisoryRating: 'Clean',
-    previewUrl:
-      'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_596.mp3?dest-id=2422538',
+    previewUrl: 'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_596.mp3?dest-id=2422538',
     artistViewUrl: 'https://itunes.apple.com/us/artist/the-joe-budden-network/1535844019?mt=2&uo=4',
-    trackViewUrl:
-      'https://podcasts.apple.com/us/podcast/episode-596-mashure/id1535809341?i=1000596450364&uo=4',
+    trackViewUrl: 'https://podcasts.apple.com/us/podcast/episode-596-mashure/id1535809341?i=1000596450364&uo=4',
     artworkUrl60:
       'https://is2-ssl.mzstatic.com/image/thumb/Podcasts113/v4/f2/21/fa/f221fabd-017f-5125-633b-f1fe4f39802a/mza_182995249085044287.jpg/60x60bb.jpg',
     artworkUrl600:
@@ -424,20 +388,16 @@ export const List = [
     kind: 'podcast-episode',
     wrapperType: 'podcastEpisode',
     trackTimeMillis: 9938000,
-    episodeUrl:
-      'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_596.mp3?dest-id=2422538',
-    collectionViewUrl:
-      'https://itunes.apple.com/us/podcast/the-joe-budden-podcast/id1535809341?mt=2&uo=4',
+    episodeUrl: 'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_596.mp3?dest-id=2422538',
+    collectionViewUrl: 'https://itunes.apple.com/us/podcast/the-joe-budden-podcast/id1535809341?mt=2&uo=4',
   },
   {
     country: 'USA',
     feedUrl: 'https://jbpod.libsyn.com/applepodcast',
     contentAdvisoryRating: 'Explicit',
-    previewUrl:
-      'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_595.mp3?dest-id=2422538',
+    previewUrl: 'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_595.mp3?dest-id=2422538',
     artistViewUrl: 'https://itunes.apple.com/us/artist/the-joe-budden-network/1535844019?mt=2&uo=4',
-    trackViewUrl:
-      'https://podcasts.apple.com/us/podcast/episode-595-heinie-blows/id1535809341?i=1000595851062&uo=4',
+    trackViewUrl: 'https://podcasts.apple.com/us/podcast/episode-595-heinie-blows/id1535809341?i=1000595851062&uo=4',
     artworkUrl60:
       'https://is2-ssl.mzstatic.com/image/thumb/Podcasts113/v4/f2/21/fa/f221fabd-017f-5125-633b-f1fe4f39802a/mza_182995249085044287.jpg/60x60bb.jpg',
     artworkUrl600:
@@ -467,20 +427,16 @@ export const List = [
     kind: 'podcast-episode',
     wrapperType: 'podcastEpisode',
     trackTimeMillis: 8837000,
-    episodeUrl:
-      'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_595.mp3?dest-id=2422538',
-    collectionViewUrl:
-      'https://itunes.apple.com/us/podcast/the-joe-budden-podcast/id1535809341?mt=2&uo=4',
+    episodeUrl: 'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_595.mp3?dest-id=2422538',
+    collectionViewUrl: 'https://itunes.apple.com/us/podcast/the-joe-budden-podcast/id1535809341?mt=2&uo=4',
   },
   {
     country: 'USA',
     feedUrl: 'https://jbpod.libsyn.com/applepodcast',
     contentAdvisoryRating: 'Clean',
-    previewUrl:
-      'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_594.mp3?dest-id=2422538',
+    previewUrl: 'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_594.mp3?dest-id=2422538',
     artistViewUrl: 'https://itunes.apple.com/us/artist/the-joe-budden-network/1535844019?mt=2&uo=4',
-    trackViewUrl:
-      'https://podcasts.apple.com/us/podcast/episode-594-training-day/id1535809341?i=1000595152813&uo=4',
+    trackViewUrl: 'https://podcasts.apple.com/us/podcast/episode-594-training-day/id1535809341?i=1000595152813&uo=4',
     artworkUrl60:
       'https://is2-ssl.mzstatic.com/image/thumb/Podcasts113/v4/f2/21/fa/f221fabd-017f-5125-633b-f1fe4f39802a/mza_182995249085044287.jpg/60x60bb.jpg',
     artworkUrl600:
@@ -510,20 +466,16 @@ export const List = [
     kind: 'podcast-episode',
     wrapperType: 'podcastEpisode',
     trackTimeMillis: 9520000,
-    episodeUrl:
-      'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_594.mp3?dest-id=2422538',
-    collectionViewUrl:
-      'https://itunes.apple.com/us/podcast/the-joe-budden-podcast/id1535809341?mt=2&uo=4',
+    episodeUrl: 'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_594.mp3?dest-id=2422538',
+    collectionViewUrl: 'https://itunes.apple.com/us/podcast/the-joe-budden-podcast/id1535809341?mt=2&uo=4',
   },
   {
     country: 'USA',
     feedUrl: 'https://jbpod.libsyn.com/applepodcast',
     contentAdvisoryRating: 'Explicit',
-    previewUrl:
-      'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_593.mp3?dest-id=2422538',
+    previewUrl: 'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_593.mp3?dest-id=2422538',
     artistViewUrl: 'https://itunes.apple.com/us/artist/the-joe-budden-network/1535844019?mt=2&uo=4',
-    trackViewUrl:
-      'https://podcasts.apple.com/us/podcast/episode-593-what-the-flock/id1535809341?i=1000594414392&uo=4',
+    trackViewUrl: 'https://podcasts.apple.com/us/podcast/episode-593-what-the-flock/id1535809341?i=1000594414392&uo=4',
     artworkUrl60:
       'https://is2-ssl.mzstatic.com/image/thumb/Podcasts113/v4/f2/21/fa/f221fabd-017f-5125-633b-f1fe4f39802a/mza_182995249085044287.jpg/60x60bb.jpg',
     artworkUrl600:
@@ -553,17 +505,14 @@ export const List = [
     kind: 'podcast-episode',
     wrapperType: 'podcastEpisode',
     trackTimeMillis: 9794000,
-    episodeUrl:
-      'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_593.mp3?dest-id=2422538',
-    collectionViewUrl:
-      'https://itunes.apple.com/us/podcast/the-joe-budden-podcast/id1535809341?mt=2&uo=4',
+    episodeUrl: 'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_593.mp3?dest-id=2422538',
+    collectionViewUrl: 'https://itunes.apple.com/us/podcast/the-joe-budden-podcast/id1535809341?mt=2&uo=4',
   },
   {
     country: 'USA',
     feedUrl: 'https://jbpod.libsyn.com/applepodcast',
     contentAdvisoryRating: 'Explicit',
-    previewUrl:
-      'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_592_1.mp3?dest-id=2422538',
+    previewUrl: 'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_592_1.mp3?dest-id=2422538',
     artistViewUrl: 'https://itunes.apple.com/us/artist/the-joe-budden-network/1535844019?mt=2&uo=4',
     trackViewUrl:
       'https://podcasts.apple.com/us/podcast/episode-592-dont-play-with-it/id1535809341?i=1000593662172&uo=4',
@@ -596,20 +545,16 @@ export const List = [
     kind: 'podcast-episode',
     wrapperType: 'podcastEpisode',
     trackTimeMillis: 12398000,
-    episodeUrl:
-      'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_592_1.mp3?dest-id=2422538',
-    collectionViewUrl:
-      'https://itunes.apple.com/us/podcast/the-joe-budden-podcast/id1535809341?mt=2&uo=4',
+    episodeUrl: 'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_592_1.mp3?dest-id=2422538',
+    collectionViewUrl: 'https://itunes.apple.com/us/podcast/the-joe-budden-podcast/id1535809341?mt=2&uo=4',
   },
   {
     country: 'USA',
     feedUrl: 'https://jbpod.libsyn.com/applepodcast',
     contentAdvisoryRating: 'Explicit',
-    previewUrl:
-      'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_591_1.mp3?dest-id=2422538',
+    previewUrl: 'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_591_1.mp3?dest-id=2422538',
     artistViewUrl: 'https://itunes.apple.com/us/artist/the-joe-budden-network/1535844019?mt=2&uo=4',
-    trackViewUrl:
-      'https://podcasts.apple.com/us/podcast/episode-591-butt-floss/id1535809341?i=1000592955202&uo=4',
+    trackViewUrl: 'https://podcasts.apple.com/us/podcast/episode-591-butt-floss/id1535809341?i=1000592955202&uo=4',
     artworkUrl60:
       'https://is2-ssl.mzstatic.com/image/thumb/Podcasts113/v4/f2/21/fa/f221fabd-017f-5125-633b-f1fe4f39802a/mza_182995249085044287.jpg/60x60bb.jpg',
     artworkUrl600:
@@ -639,20 +584,16 @@ export const List = [
     kind: 'podcast-episode',
     wrapperType: 'podcastEpisode',
     trackTimeMillis: 10243000,
-    episodeUrl:
-      'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_591_1.mp3?dest-id=2422538',
-    collectionViewUrl:
-      'https://itunes.apple.com/us/podcast/the-joe-budden-podcast/id1535809341?mt=2&uo=4',
+    episodeUrl: 'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_591_1.mp3?dest-id=2422538',
+    collectionViewUrl: 'https://itunes.apple.com/us/podcast/the-joe-budden-podcast/id1535809341?mt=2&uo=4',
   },
   {
     country: 'USA',
     feedUrl: 'https://jbpod.libsyn.com/applepodcast',
     contentAdvisoryRating: 'Explicit',
-    previewUrl:
-      'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_590_1.mp3?dest-id=2422538',
+    previewUrl: 'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_590_1.mp3?dest-id=2422538',
     artistViewUrl: 'https://itunes.apple.com/us/artist/the-joe-budden-network/1535844019?mt=2&uo=4',
-    trackViewUrl:
-      'https://podcasts.apple.com/us/podcast/episode-590-the-4th-wall/id1535809341?i=1000591470644&uo=4',
+    trackViewUrl: 'https://podcasts.apple.com/us/podcast/episode-590-the-4th-wall/id1535809341?i=1000591470644&uo=4',
     artworkUrl60:
       'https://is2-ssl.mzstatic.com/image/thumb/Podcasts113/v4/f2/21/fa/f221fabd-017f-5125-633b-f1fe4f39802a/mza_182995249085044287.jpg/60x60bb.jpg',
     artworkUrl600:
@@ -682,20 +623,16 @@ export const List = [
     kind: 'podcast-episode',
     wrapperType: 'podcastEpisode',
     trackTimeMillis: 10979000,
-    episodeUrl:
-      'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_590_1.mp3?dest-id=2422538',
-    collectionViewUrl:
-      'https://itunes.apple.com/us/podcast/the-joe-budden-podcast/id1535809341?mt=2&uo=4',
+    episodeUrl: 'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_590_1.mp3?dest-id=2422538',
+    collectionViewUrl: 'https://itunes.apple.com/us/podcast/the-joe-budden-podcast/id1535809341?mt=2&uo=4',
   },
   {
     country: 'USA',
     feedUrl: 'https://jbpod.libsyn.com/applepodcast',
     contentAdvisoryRating: 'Explicit',
-    previewUrl:
-      'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_589.mp3?dest-id=2422538',
+    previewUrl: 'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_589.mp3?dest-id=2422538',
     artistViewUrl: 'https://itunes.apple.com/us/artist/the-joe-budden-network/1535844019?mt=2&uo=4',
-    trackViewUrl:
-      'https://podcasts.apple.com/us/podcast/episode-589-golden-child/id1535809341?i=1000591178377&uo=4',
+    trackViewUrl: 'https://podcasts.apple.com/us/podcast/episode-589-golden-child/id1535809341?i=1000591178377&uo=4',
     artworkUrl60:
       'https://is2-ssl.mzstatic.com/image/thumb/Podcasts113/v4/f2/21/fa/f221fabd-017f-5125-633b-f1fe4f39802a/mza_182995249085044287.jpg/60x60bb.jpg',
     artworkUrl600:
@@ -725,17 +662,14 @@ export const List = [
     kind: 'podcast-episode',
     wrapperType: 'podcastEpisode',
     trackTimeMillis: 9695000,
-    episodeUrl:
-      'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_589.mp3?dest-id=2422538',
-    collectionViewUrl:
-      'https://itunes.apple.com/us/podcast/the-joe-budden-podcast/id1535809341?mt=2&uo=4',
+    episodeUrl: 'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_589.mp3?dest-id=2422538',
+    collectionViewUrl: 'https://itunes.apple.com/us/podcast/the-joe-budden-podcast/id1535809341?mt=2&uo=4',
   },
   {
     country: 'USA',
     feedUrl: 'https://jbpod.libsyn.com/applepodcast',
     contentAdvisoryRating: 'Explicit',
-    previewUrl:
-      'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_588.mp3?dest-id=2422538',
+    previewUrl: 'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_588.mp3?dest-id=2422538',
     artistViewUrl: 'https://itunes.apple.com/us/artist/the-joe-budden-network/1535844019?mt=2&uo=4',
     trackViewUrl:
       'https://podcasts.apple.com/us/podcast/episode-588-scared-straighter/id1535809341?i=1000590841200&uo=4',
@@ -768,20 +702,16 @@ export const List = [
     kind: 'podcast-episode',
     wrapperType: 'podcastEpisode',
     trackTimeMillis: 10383000,
-    episodeUrl:
-      'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_588.mp3?dest-id=2422538',
-    collectionViewUrl:
-      'https://itunes.apple.com/us/podcast/the-joe-budden-podcast/id1535809341?mt=2&uo=4',
+    episodeUrl: 'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_588.mp3?dest-id=2422538',
+    collectionViewUrl: 'https://itunes.apple.com/us/podcast/the-joe-budden-podcast/id1535809341?mt=2&uo=4',
   },
   {
     country: 'USA',
     feedUrl: 'https://jbpod.libsyn.com/applepodcast',
     contentAdvisoryRating: 'Explicit',
-    previewUrl:
-      'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_587.mp3?dest-id=2422538',
+    previewUrl: 'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_587.mp3?dest-id=2422538',
     artistViewUrl: 'https://itunes.apple.com/us/artist/the-joe-budden-network/1535844019?mt=2&uo=4',
-    trackViewUrl:
-      'https://podcasts.apple.com/us/podcast/episode-587-so-sick/id1535809341?i=1000590466737&uo=4',
+    trackViewUrl: 'https://podcasts.apple.com/us/podcast/episode-587-so-sick/id1535809341?i=1000590466737&uo=4',
     artworkUrl60:
       'https://is2-ssl.mzstatic.com/image/thumb/Podcasts113/v4/f2/21/fa/f221fabd-017f-5125-633b-f1fe4f39802a/mza_182995249085044287.jpg/60x60bb.jpg',
     artworkUrl600:
@@ -811,17 +741,14 @@ export const List = [
     kind: 'podcast-episode',
     wrapperType: 'podcastEpisode',
     trackTimeMillis: 9565000,
-    episodeUrl:
-      'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_587.mp3?dest-id=2422538',
-    collectionViewUrl:
-      'https://itunes.apple.com/us/podcast/the-joe-budden-podcast/id1535809341?mt=2&uo=4',
+    episodeUrl: 'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_587.mp3?dest-id=2422538',
+    collectionViewUrl: 'https://itunes.apple.com/us/podcast/the-joe-budden-podcast/id1535809341?mt=2&uo=4',
   },
   {
     country: 'USA',
     feedUrl: 'https://jbpod.libsyn.com/applepodcast',
     contentAdvisoryRating: 'Explicit',
-    previewUrl:
-      'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_586.mp3?dest-id=2422538',
+    previewUrl: 'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_586.mp3?dest-id=2422538',
     artistViewUrl: 'https://itunes.apple.com/us/artist/the-joe-budden-network/1535844019?mt=2&uo=4',
     trackViewUrl:
       'https://podcasts.apple.com/us/podcast/episode-586-the-side-main-feat-akademiks/id1535809341?i=1000590133523&uo=4',
@@ -854,9 +781,7 @@ export const List = [
     kind: 'podcast-episode',
     wrapperType: 'podcastEpisode',
     trackTimeMillis: 10039000,
-    episodeUrl:
-      'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_586.mp3?dest-id=2422538',
-    collectionViewUrl:
-      'https://itunes.apple.com/us/podcast/the-joe-budden-podcast/id1535809341?mt=2&uo=4',
+    episodeUrl: 'https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_586.mp3?dest-id=2422538',
+    collectionViewUrl: 'https://itunes.apple.com/us/podcast/the-joe-budden-podcast/id1535809341?mt=2&uo=4',
   },
 ];
