@@ -5,19 +5,18 @@
 
   @media (min-width: 992px) {
     grid-template-columns: 30% 1fr;
-    place-items: center;
+    min-height: 100%;
   }
 }
 .container {
   border: none;
   border-block-end: 1px solid var(--white);
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-rows: auto 1fr;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   margin: auto;
   margin-block-end: 2rem;
   padding: 1rem;
-  place-items: center;
   width: 100%;
 
   img {
