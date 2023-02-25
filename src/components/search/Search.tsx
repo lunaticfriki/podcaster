@@ -1,10 +1,11 @@
 import { ChangeEvent, FC, useEffect, useState } from 'react';
 
 import { SearchContent } from '../../content';
+import { CallbackFunction } from '../../types';
 import SearchStyles from './Search.module.scss';
 
 interface SearchProps {
-  fn: any;
+  fn: CallbackFunction;
 }
 
 const Search: FC<SearchProps> = ({ fn }) => {

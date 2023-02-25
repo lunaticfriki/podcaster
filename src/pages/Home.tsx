@@ -1,11 +1,11 @@
 import { useQuery } from '@tanstack/react-query';
 import { FC, useEffect, useState } from 'react';
 
-import { Entry } from '../../server/src/feed/feed-types';
 import Loader from '../components/common/Loader';
 import Counter from '../components/counter/Counter';
 import Card from '../components/Podcast/Card';
 import Search from '../components/search/Search';
+import { Entry } from '../types';
 import { fetchPodcast } from '../utils';
 import HomeStyles from './styles/Home.module.scss';
 
@@ -13,7 +13,7 @@ const Home: FC = () => {
   const [search, setSearch] = useState('');
   const [list, setList] = useState<Entry[]>([]);
 
-  const getFilter = (filter: '') => {
+  const getFilter = (filter: string): void => {
     setSearch(filter);
   };
 

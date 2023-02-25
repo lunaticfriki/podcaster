@@ -5,6 +5,7 @@ import { useParams } from 'react-router-dom';
 
 import Loader from '../../../components/common/Loader';
 import Detail from '../../../components/Podcast/Detail';
+import { Entry, Episode as EpisodeType } from '../../../types';
 import { fetchPodcast } from '../../../utils';
 import ErrorPage from '../../ErrorPage';
 import EpisodeStyles from './Episode.module.scss';
@@ -23,9 +24,9 @@ const Episode: FC = () => {
     return <ErrorPage />;
   }
 
-  const podcast = data?.mainPodcastInfo.feed.entry.find((entry: any) => entry.id.attributes['im:id'] === id);
+  const podcast = data?.mainPodcastInfo.feed.entry.find((entry: Entry) => entry.id.attributes['im:id'] === id);
 
-  const episode = data?.episodes?.find((el: any) => el.trackId.toString() === episodeId);
+  const episode = data?.episodes?.find((el: EpisodeType) => el.trackId.toString() === episodeId);
 
   return (
     <Suspense>

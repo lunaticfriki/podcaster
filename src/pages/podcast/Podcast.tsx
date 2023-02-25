@@ -4,6 +4,7 @@ import { FC } from 'react';
 import { useParams } from 'react-router-dom';
 
 import Loader from '../../components/common/Loader';
+import { Entry } from '../../types';
 import { fetchPodcast } from '../../utils';
 import ErrorPage from '../ErrorPage';
 import PodcastStyles from './Podcast.module.scss';
@@ -18,7 +19,7 @@ const Podcast: FC = () => {
   if (isLoading && !data) {
     return <Loader />;
   }
-  const podcast = data?.mainPodcastInfo.feed.entry.find((entry: any) => entry.id.attributes['im:id'] === id);
+  const podcast = data?.mainPodcastInfo.feed.entry.find((entry: Entry) => entry.id.attributes['im:id'] === id);
 
   if (!data?.episodes.length) {
     return <ErrorPage />;
