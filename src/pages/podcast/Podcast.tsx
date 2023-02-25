@@ -2,7 +2,7 @@ import { Suspense, lazy } from 'react';
 
 import { FC } from 'react';
 import Loader from '../../components/common/Loader';
-import PodcastStyles from './styles/Podcast.module.scss';
+import PodcastStyles from './Podcast.module.scss';
 import { fetchPodcast } from '../../utils';
 import { useParams } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
@@ -18,13 +18,12 @@ const Podcast: FC = () => {
     (entry: any) => entry.id.attributes['im:id'] === id
   );
 
-  console.log(podcast?.id);
   if (isLoading && !data) {
     return <Loader />;
   } else {
     return (
-      <div className={PodcastStyles.container}>
-        <Suspense>
+      <Suspense>
+        <div className={PodcastStyles.container}>
           <Sidebar
             title={data?.info.results[0].trackName}
             author={data?.info.results[0].artistName}
@@ -36,8 +35,8 @@ const Podcast: FC = () => {
               <List count={data?.info.resultCount} episodes={data?.episodes} />
             </Suspense>
           </Sidebar>
-        </Suspense>
-      </div>
+        </div>
+      </Suspense>
     );
   }
 };

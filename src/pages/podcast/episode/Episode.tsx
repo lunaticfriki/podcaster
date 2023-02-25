@@ -1,12 +1,12 @@
-import { Suspense, lazy } from 'react';
+import { Suspense, lazy, useEffect } from 'react';
 
 import Detail from '../../../components/Podcast/Detail';
+import EpisodeStyles from './Episode.module.scss';
 import { EpisodesData } from '../../../../server/src/feed/detail-types';
 import ErrorPage from '../../ErrorPage';
 import { FC } from 'react';
 import Loader from '../../../components/common/Loader';
 import { fetchPodcast } from '../../../utils';
-import parse from 'html-react-parser';
 import { useParams } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 
@@ -19,27 +19,30 @@ const Episode: FC = () => {
   if (isLoading && !data) {
     return <Loader />;
   } else {
-    const { artistName, name, description, image } = data.attributes;
-    const { relationships } = data;
+    const podcast = data?.mainPodcastInfo.feed.entry.find(
+      (entry: any) => entry.id.attributes['im:id'] === id
+    );
 
-    const episode = relationships?.episodes?.data.find((el: EpisodesData) => el.id === episodeId);
-
+    const episode = data?.episodes?.find((el: any) => el.trackId.toString() === episodeId);
     return (
       <Suspense>
-        {episode ? (
-          <Sidebar
-            title={name}
-            author={artistName}
-            cover={image[2].label}
-            description={parse(description.standard)}
-          >
-            <Suspense>
-              <Detail episodeDetail={episode.attributes} />
-            </Suspense>
-          </Sidebar>
-        ) : (
-          <ErrorPage />
-        )}
+        <div className={EpisodeStyles.container}>
+          {true ? (
+            <Sidebar
+              title={data?.info.results[0].trackName}
+              author={data?.info.results[0].artistName}
+              cover={data?.info.results[0].artworkUrl600}
+              description={podcast?.summary.label}
+              id={podcast?.id.attributes['im:id']}
+            >
+              <Suspense>
+                <Detail episodeDetail={episode} />
+              </Suspense>
+            </Sidebar>
+          ) : (
+            <ErrorPage />
+          )}
+        </div>
       </Suspense>
     );
   }

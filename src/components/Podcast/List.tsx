@@ -18,7 +18,7 @@ const List: FC<ListProps> = ({ count, episodes }) => {
       <p>Episodes: {count}</p>
       <ul>
         {episodes.map((el) => (
-          <Link to={`/podcast/${id}/episode/${el.artistIds[0]}`} key={el.trackName}>
+          <Link to={`/podcast/${id}/episode/${el.trackId}`} key={el.trackName}>
             <ListElement
               name={el.trackName}
               date={el.releaseDate.slice(0, 10)}
