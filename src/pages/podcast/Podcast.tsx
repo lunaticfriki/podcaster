@@ -14,13 +14,13 @@ const Podcast: FC = () => {
   const { id } = useParams();
   const { isLoading, data } = useQuery(['podcast', id], fetchPodcast);
 
-  const podcast = data?.mainPodcastInfo.feed.entry.find(
-    (entry: any) => entry.id.attributes['im:id'] === id
-  );
-
   if (isLoading && !data) {
     return <Loader />;
   } else {
+    const podcast = data?.mainPodcastInfo.feed.entry.find(
+      (entry: any) => entry.id.attributes['im:id'] === id
+    );
+
     return (
       <Suspense>
         <div className={PodcastStyles.container}>

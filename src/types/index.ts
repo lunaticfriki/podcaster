@@ -11,12 +11,7 @@ export interface Episode {
   closedCaptioning: string;
   collectionId: number;
   collectionName: string;
-  genres: [
-    {
-      name: string;
-      id: string;
-    }
-  ];
+  genres: Genre[];
   episodeGuid: string;
   description: string;
   releaseDate: string;
@@ -26,7 +21,7 @@ export interface Episode {
   trackTimeMillis: number;
   collectionViewUrl: string;
   feedUrl: string;
-  artistIds: [number];
+  artistIds: number[];
   episodeUrl: string;
   artworkUrl600: string;
   artworkUrl60: string;
@@ -37,3 +32,8 @@ export interface Episode {
   kind: string;
   wrapperType: string;
 }
+
+export type Genre = {
+  name: string;
+  id: string;
+};

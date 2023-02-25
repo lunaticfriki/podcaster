@@ -1,15 +1,14 @@
 import { render, screen } from '../../../test/test-utils';
 
-import { BrowserRouter } from 'react-router-dom';
-import { Detail } from '../../../../server/src/feed/mocks/detail';
-import { EpisodesData } from '../../../../server/src/feed/detail-types';
+import { Episode } from '../../../types';
 import List from '../List';
+import { List as MockList } from './__mocks__';
 
-const episodeList = Detail.data[0].relationships.episodes.data;
+const episodeList = MockList;
 
 interface testPropsI {
   count: string;
-  episodes: EpisodesData[];
+  episodes: Episode[];
 }
 
 const testProps: testPropsI = {

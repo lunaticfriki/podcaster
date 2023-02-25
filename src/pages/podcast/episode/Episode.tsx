@@ -24,6 +24,7 @@ const Episode: FC = () => {
     );
 
     const episode = data?.episodes?.find((el: any) => el.trackId.toString() === episodeId);
+
     return (
       <Suspense>
         <div className={EpisodeStyles.container}>

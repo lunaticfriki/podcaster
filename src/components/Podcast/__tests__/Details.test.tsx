@@ -1,10 +1,10 @@
 import { render, screen } from '../../../test/test-utils';
 
 import Detail from '../Detail';
-import { EpisodeAttributes } from '../../../../server/src/feed/detail-types';
-import { Detail as MockDetail } from '../../../../server/src/feed/mocks/detail';
+import { Episode } from '../../../types';
+import { Detail as MockDetail } from './__mocks__';
 
-const testProps: EpisodeAttributes = MockDetail.data[0].relationships.episodes.data[0].attributes;
+const testProps: Episode = MockDetail;
 
 describe('Detail component test suite', () => {
   beforeEach(() => {
@@ -17,7 +17,7 @@ describe('Detail component test suite', () => {
   });
   it('should display the podcast title', () => {
     const title = screen.getByRole('heading');
-    expect(title).toHaveTextContent(testProps.name);
+    expect(title).toHaveTextContent(testProps.trackName);
   });
   it('should display the podcast description', () => {
     const description = screen.getByTestId('description');
