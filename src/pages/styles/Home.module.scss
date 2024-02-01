@@ -1,0 +1,25 @@
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  padding: 1rem;
+  width: 100%;
+}
+
+.header {
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-columns: 3rem 1fr;
+  margin-block-end: 2rem;
+  place-items: center;
+}
+
+.cardList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}

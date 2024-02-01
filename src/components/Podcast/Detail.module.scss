@@ -1,0 +1,13 @@
+.container {
+  display: grid;
+  grid-gap: 1rem;
+  max-height: 1000px;
+  padding: 1rem;
+  place-content: center;
+  place-items: center;
+  width: 100%;
+
+  p {
+    text-align: justify;
+  }
+}

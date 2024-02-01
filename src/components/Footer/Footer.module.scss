@@ -1,0 +1,16 @@
+.container {
+  display: grid;
+  height: 100%;
+  place-content: center;
+  place-items: center;
+  width: 100%;
+}
+.signature {
+  color: var(--white);
+  font-size: clamp(0.7rem, 2vw, 0.9rem);
+  font-style: normal;
+  text-decoration: none;
+}
+.year {
+  color: var(--primary);
+}
